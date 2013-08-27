@@ -1,0 +1,13 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:ImageLoader.ViewModels"
+    SampleProperty="Sample Text Property Value">
+
+    <vm:MainViewModel.Contacts>
+        <vm:ContactViewModel ID="0" FirstName="Bill" LastName="Gates" ImageUrl="http://www.microsoft.com/global/en-us/news/PublishingImages/bod/billg/gates_web.jpg"/>
+        <vm:ContactViewModel ID="1" FirstName="Steve" LastName="Balmer" ImageUrl="http://1.androidauthority.com/wp-content/uploads/2008/10/ballmer-1.jpg"/>
+        <vm:ContactViewModel ID="2" FirstName="Paul" LastName="Allen" ImageUrl="http://tektype.files.wordpress.com/2010/08/paul_allen2.jpg?w=157&h=224"/>
+    </vm:MainViewModel.Contacts>
+
+</vm:MainViewModel>
