@@ -261,8 +261,7 @@ namespace ImageLoader
 
         public static async Task LoadContactPhoto(ContactViewModel contact)
         {
-            var handler = new HttpClientHandler();
-            using (var client = new HttpClient(handler))
+            using (var client = new HttpClient())
             {
                 var requestMessage = new HttpRequestMessage(HttpMethod.Get, contact.ImageUrl);
                 var responseMessage = await client.SendAsync((requestMessage));
